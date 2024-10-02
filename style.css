@@ -1,0 +1,357 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+
+     /* header section */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+nav{
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#3c2b2b;
+    position: relative;
+    height: 70px;
+
+}
+.logo h1{
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.logo span {
+    color: orange;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+nav ul li a{
+     text-decoration: none;
+     color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: #df8e4c;
+    transition: 0.3s;
+
+
+}
+
+
+.menu-icon{
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+  /* hero section */
+
+.hero{
+    width: 100%;
+    margin-top: 70px;
+    height: 70vh;
+    background:url(img/coffee\ 1\ \(1\).jpg);
+    background-size: cover;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.hero-text{
+    line-height: 40px;
+}
+
+.hero-text h5{
+    font-size: 12px;
+
+}
+
+.hero-text h1{
+    font-size: 40px;
+
+}
+
+.hero-text p{
+    font-family:"roboto", serif;
+}
+
+.btn{
+    text-align: center;
+    margin: 20px;
+}
+.btn a{
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    /* font-family: serif; */
+    font-weight: 400;
+    padding: 5px 10px;
+}
+.btn a:hover{
+    background-color: #D57D0B;
+
+}
+.marque-text{
+    width: 100%;
+    height: 40px;
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.text-containt{
+    width: 100%;
+    text-align: center;
+
+}
+.second-hero-text{
+    padding-top: 30px;
+}
+.second-hero-text h2{
+    padding-bottom: 20px;
+}
+.second-hero-text p{
+    font-family:"Roboto" , serif;
+
+}
+.btn2{
+    padding: 30px;
+}
+.btn2 a{
+    text-decoration: none;
+    background-color: #D57D0B;
+    padding: 5px 10px;
+    color:white;
+    font-weight: 400;
+}
+.btn2 a:hover{
+    background: #795e48;
+}
+.small-text p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.cart{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+.cart-1{
+    width: 500px;
+    overflow: hidden;
+}
+
+.cart-2{
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+
+}
+.cart img{
+    width: 100%;
+    transition: all ease 1s;
+}
+.cart-1:hover img{
+   scale: 1.2;
+}
+.cart-2:hover img{
+    scale: 1.2;
+ }
+
+
+.cart-2 h2{
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: #fff;
+}
+
+.position{
+    width: 100%;
+    height: 300px;
+    margin: 20px 0px;
+    background: url(img/coffee\ cup.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.demo{
+    padding: 100px;
+    color: white;
+}
+
+  /* our footer section start */
+
+.footer{
+    width: 100%;
+    background-color: black;
+
+}
+ .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.link a{
+     text-decoration: none;
+     color: #fff;
+     display: inline;
+     text-align: center;
+     padding: 30px;
+     font-weight: 500;
+
+}
+.link a:hover{
+    color: #e0e0e0;
+}
+.heading{
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.social-icon i{
+    color: grey;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+
+}
+.fa-twitter:hover{
+    color: 	#1DA1F2;
+
+}
+.fa-instagram:hover{
+    color: 	#FCAF45;
+}
+.fa-facebook:hover{
+    color: 	#1877F2;
+}
+
+.copyright{
+    color: gray;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.copyright span{
+    color: green;
+}
+
+
+    /*---- meadia queary --*/
+    @media (max-width:700px) {
+        nav ul{
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right:0px;
+            flex-direction: column;
+            text-align: center;
+            background-color:#3c2b2b;
+            gap: 0;
+            overflow: hidden;
+        }
+        nav ul li{
+            padding: 20px;
+        }
+        .menu-icon{
+            display: block;
+        }
+        #menulist{
+            transition: all 0.5s;
+        }
+    }
+
+
+    @media(max-width:800px){
+      .second-hero-text h2 {
+        background-color:greenyellow;
+      }
+      header{
+        justify-content: space-between;
+
+      }
+      .navbar{
+        display: none;
+
+      }
+
+      #bar{
+        font-size: 25px;
+        display: block;
+        color: #fff;
+        cursor: pointer;
+
+      }
+
+
+      .cart{
+        flex-direction: column;
+      }
+      .cart-1{
+        margin-bottom: 20px;
+      }
+
+
+    }
+    @media(max-width:550px){
+          .logo{
+            margin-right:40px;
+          }
+          .heading{
+            padding-top: 30px;
+          }
+          .link{
+            flex-direction: column;
+          }
+          .link a{
+            padding: 10px;
+          }
+          .copyright{
+            padding:0px 0px 40px 0px;
+          }
+
+    }
+
+

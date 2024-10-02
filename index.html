@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="coffee.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee Mugs</title>
+</head>
+
+<body id="home">
+    <!-- header section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 id="home"><span>Coffee </span>Style</h1>
+            </div>
+
+            <ul id="menulist">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#ourproject">OUR PRODUCTS</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+
+    <div class="hero" id="ourproject">
+        <div class="hero-text">
+            <h5>BEST PLACE TO OUR DESING</h5>
+            <h1>Coffee Mugs</h1>
+            <p>The most verstile furniture system even created Designed to fit your life, made to move and grow.</p>
+        </div>
+        <div class="btn"><a href="">EXPLORE OUR PRODUCTS</a></div>
+    </div>
+
+    <div class="marque-text">
+        <marquee behavior="" direction="">FREE SHIPING ON ORDER $40</marquee>
+    </div>
+
+    <div class="text-containt">
+        <div class="second-hero-text">
+            <h2>Even tha all-poerful Pointing has no control about <br>
+                the blind texts.
+            </h2>
+            <p>It is a paradisematic country, in which rossted parts of sentences fly into your mouth <br>
+                Even the all-poerful pointing has no control about the bhind tests it is almost <br>
+                Ipsum decided to leave for the far worid of grammar.
+            </p>
+        </div>
+        <div class="btn2"><a href="">Read the full story</a></div>
+    </div>
+
+    <div class="small-text">
+        <p>FEATURED MASS</p>
+    </div>
+
+
+    <div class="cart" id="blog">
+        <div class="cart-1">
+             <img src="img/coffee 3.jpg" alt="">
+        </div>
+        <div class="cart-2">
+            <img src="img/coffee 1 (4).jpg" alt="">
+            <h2> On Sale.</h2>
+        </div>
+    </div>
+    <div class="position">
+        <div class="demo">
+            <h1> This is Amazing Coffee </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, ut. Iusto cumque beatae assumenda odit quas odio eveniet consectetur provident cupiditate dolores, ratione corrupti tempora culpa, et perferendis iure modi.</p>
+        </div>
+
+    </div>
+
+
+    <!-- our footer section  -->
+
+    <div class="footer" id="contact">
+        <div class="heading">
+            <h1>CoffeeStyle</h1>
+        </div>
+        <div class="link">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">AGENT</a>
+            <a href="#">BLOGS</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="social-icon">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; All rights reserced| This template is made with &#9829; by <span> edx.munna</span></p>
+        </div>
+    </div>
+
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "300px";
+
+            } else {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
